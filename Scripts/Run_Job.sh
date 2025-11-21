@@ -1,5 +1,5 @@
 
-MAPREDUCE_DIR="./MapReduce"
+MAPREDUCE_DIR="../MapReduce"
 HDFS_DATA="hdfs:///data/weather/Data.csv"
 
 echo "Lista de Jobs disponibles:"
@@ -19,7 +19,7 @@ echo "Ingresa el nombre del directorio de salida en HDFS:"
 echo "(Ejemplo: avg_temp, daily_stats, humedad)"
 read OUTPUT
 
-OUTPUT_DIR="hdfs:///results/$OUTPUT"
+OUTPUT_DIR="hdfs:///data/weather/Output/$OUTPUT"
 
 echo "¿Deseas agregar parámetros como --start y --end? (s/n)"
 read ADD_PARAMS
